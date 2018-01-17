@@ -28,4 +28,12 @@
       <Filter>头文件\Gra</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseType.cpp">
+      <Filter>源文件\Gra</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
