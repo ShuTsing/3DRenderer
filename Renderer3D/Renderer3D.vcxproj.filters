@@ -35,5 +35,8 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="GraMath.cpp">
+      <Filter>源文件\Gra</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
