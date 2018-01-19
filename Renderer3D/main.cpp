@@ -1,14 +1,13 @@
 #include <iostream>
 #include <cstdlib>
-//#include "BaseType.h"
-#include <amp.h> //GPU加速
+#include "BaseType.h"
+
+//#include <amp.h> //GPU加速
 #include <ctime>
 
 #define MATRIX_ORDER 1000
 
-using concurrency::array_view;
-using concurrency::parallel_for_each;
-using concurrency::index;
+
 
 using namespace std;
 
@@ -102,6 +101,26 @@ float Matrix_AMP()
 int main()
 {
 	//Matrix_AMP();
+	gra::Matrix4D a = gra::Matrix4D(), b = gra::Matrix4D();
+	a.At(1, 1) = 1;
+	a = a * b;
+	auto s = clock();
+	a = a * b;
+	a = a * b;
+	a = a * b;
+	a = a * b;
+	a = a * b;
+	a = a * b;
+	a = a * b;
+	a = a * b;
+	a = a * b;
+	a = a * b;
+	a = a * b;
+	a = a * b;
+	a = a * b;
+	a = a * b;
+	auto e = clock();
+	cout << (double)(e - s) / CLOCKS_PER_SEC << endl;
 	system("pause");
 	return 0;
 }
