@@ -117,11 +117,15 @@
   <ItemGroup>
     <ClInclude Include="BaseType.h" />
     <ClInclude Include="GraMath.h" />
+    <ClInclude Include="Line.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="Shape.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseType.cpp" />
     <ClCompile Include="GraMath.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Shape.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -27,6 +27,15 @@
     <ClInclude Include="BaseType.h">
       <Filter>头文件\Gra</Filter>
     </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>头文件\Gra</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>头文件\Gra</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>头文件\Gra</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseType.cpp">
@@ -36,6 +45,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="GraMath.cpp">
+      <Filter>源文件\Gra</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
       <Filter>源文件\Gra</Filter>
     </ClCompile>
   </ItemGroup>
