@@ -4,6 +4,8 @@
 #include <cstring>
 #include <amp.h> //GPU加速
 
+#include "BaseDefine.h"
+
 
 using concurrency::array_view;
 using concurrency::parallel_for_each;
@@ -14,6 +16,9 @@ using concurrency::index;
 
 namespace gra
 {
+#define VECTOR 0
+#define POINT 1
+
 	class Vector4D;
 	class Matrix4D;
 
@@ -35,6 +40,11 @@ namespace gra
 			arr[2] = z;
 			arr[3] = w;
 		}
+
+		float& x() { return arr[0]; }                     //返回x分量
+		float& y() { return arr[1]; }                     //返回y分量
+		float& z() { return arr[2]; }                     //返回z分量
+		float& w() { return arr[3]; }                     //返回w分量
 
 		float Length(void);                               //返回向量长度
 
