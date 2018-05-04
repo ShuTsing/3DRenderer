@@ -147,6 +147,14 @@ namespace gra
 
 
 
+	void Matrix4D::Transpose(void)
+	{
+		for (int i = 0; i < 4; i++)
+			for (int j = 0; j < i; j++)
+				std::swap(arr[i * 4 + j], arr[j * 4 + i]);
+		return;
+	}
+
 	Matrix4D& Matrix4D::operator *= (const float& val)
 	{
 		//将数组每个元素依次乘val

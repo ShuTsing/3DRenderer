@@ -2,6 +2,7 @@
 
 #include <cmath>
 #include <cstring>
+#include <algorithm>
 #include <amp.h> //GPU加速
 
 #include "BaseDefine.h"
@@ -50,6 +51,8 @@ namespace gra
 
 		void Normalize();                                 //向量标准化，不可逆
 
+		void ReturnZero() { memset(arr, 0, sizeof(arr)); }//向量清零
+
 
 		Vector4D operator + (const float& val) const;     //向量加浮点数
 		Vector4D operator - (const float& val) const;     //向量减浮点数
@@ -92,6 +95,10 @@ namespace gra
 		float& At(const int& idx) {return arr[idx];}                   //通过一维下标获取值，不进行越界检查
 
 		float& operator [] (const int& idx) {return arr[idx];}         //通过一维下标获取值，不进行越界检查
+
+		void ReturnZero() { memset(arr, 0, sizeof(arr)); }      //矩阵清零
+
+		void Transpose();                                       //矩阵转置
 
 		void SetTranslate(float x, float y, float z);           //矩阵平移变换
 		void SetScale(float x, float y, float z);               //矩阵放缩变换

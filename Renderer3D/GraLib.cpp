@@ -1,6 +1,7 @@
 #include "GraLib.h"
 namespace gra
 {
+	//四字节填充
 	void MemsetQuad(void* dest, unsigned int val, int cnt)
 	{
 		_asm
@@ -13,6 +14,7 @@ namespace gra
 		return;
 	}
 
+	//二字节填充
 	void MemsetWord(void* dest, unsigned int val, int cnt)
 	{
 		_asm
