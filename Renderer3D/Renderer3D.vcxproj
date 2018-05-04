@@ -117,6 +117,7 @@
   <ItemGroup>
     <ClInclude Include="BaseDefine.h" />
     <ClInclude Include="BaseType.h" />
+    <ClInclude Include="GraLib.h" />
     <ClInclude Include="GraMath.h" />
     <ClInclude Include="Line.h" />
     <ClInclude Include="Plane.h" />
@@ -124,6 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseType.cpp" />
+    <ClCompile Include="GraLib.cpp" />
     <ClCompile Include="GraMath.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Plane.cpp" />

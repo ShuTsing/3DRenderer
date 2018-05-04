@@ -39,6 +39,9 @@
     <ClInclude Include="BaseDefine.h">
       <Filter>头文件\Gra</Filter>
     </ClInclude>
+    <ClInclude Include="GraLib.h">
+      <Filter>头文件\Gra</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseType.cpp">
@@ -54,6 +57,9 @@
       <Filter>源文件\Gra</Filter>
     </ClCompile>
     <ClCompile Include="Plane.cpp">
+      <Filter>源文件\Gra</Filter>
+    </ClCompile>
+    <ClCompile Include="GraLib.cpp">
       <Filter>源文件\Gra</Filter>
     </ClCompile>
   </ItemGroup>
